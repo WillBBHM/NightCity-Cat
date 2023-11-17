@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>premier-pas-avec-canvas</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      canvas {
+        border: 1px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #playerCanvas {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1080" height="720"></canvas>
+    <canvas id="playerCanvas" width="1080" height="720"></canvas>
+    <script type="module" src="./js/myprg.js"></script>
+  </body>
+</html>
